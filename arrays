@@ -1,0 +1,51 @@
+// Create an array
+let myArray = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+// Take elements of size 5
+let subArrays = [];
+for (let i = 0; i < myArray.length; i += 5) {
+  subArrays.push(myArray.slice(i, i + 5));
+}
+
+console.log("Sub-arrays:", subArrays);
+
+// Arrays count
+let arrayCount = myArray.length;
+console.log("Array count:", arrayCount);
+
+// Remove an element, array count
+myArray.splice(2, 1); // Remove element at index 2
+arrayCount = myArray.length;
+console.log("Array after removing an element:", myArray);
+console.log("Array count after removal:", arrayCount);
+
+// Add an element, array count
+myArray.push(110); // Add element to the end
+arrayCount = myArray.length;
+console.log("Array after adding an element:", myArray);
+console.log("Array count after addition:", arrayCount);
+
+// Array slicing
+let slicedArray = myArray.slice(2, 5);
+console.log("Sliced array:", slicedArray);
+
+// Add another array to existing array
+let newArray = [120, 130, 140];
+myArray = myArray.concat(newArray);
+console.log("Array after adding another array:", myArray);
+
+// Replace old array with new array
+let replacementArray = [200, 300, 400];
+myArray = replacementArray;
+console.log("Array after replacement:", myArray);
+
+// Count of two arrays
+let anotherArray = [5, 15, 25, 35];
+let combinedCount = myArray.length + anotherArray.length;
+console.log("Combined count of two arrays:", combinedCount);
+
+// Index of 2 array elements
+let index1 = myArray.indexOf(110); // Index of element 110
+let index2 = myArray.indexOf(300); // Index of element 300
+console.log("Index of element 110:", index1);
+console.log("Index of element 300:", index2);
