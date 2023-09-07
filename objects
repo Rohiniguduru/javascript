@@ -1,0 +1,27 @@
+// Define an object representing a car
+var car = {
+  make: "Toyota",
+  model: "Camry",
+  year: 2020,
+  color: "Blue",
+
+  // Method to start the car
+  start: function() {
+    console.log("Starting the " + this.make + " " + this.model);
+  },
+
+  // Method to stop the car
+  stop: function() {
+    console.log("Stopping the " + this.make + " " + this.model);
+  }
+};
+
+// Access and manipulate object properties and methods
+console.log("Car Details:");
+console.log("Make: " + car.make);
+console.log("Model: " + car.model);
+console.log("Year: " + car.year);
+console.log("Color: " + car.color);
+
+car.start(); // Start the car
+car.stop();  // Stop the car
