@@ -1,0 +1,33 @@
+class Person {
+    constructor(firstName, lastName) {
+      this._firstName = firstName;
+      this._lastName = lastName;
+    }
+  
+    // Getter for the full name
+    get fullName() {
+      return `${this._firstName} ${this._lastName}`;
+    }
+  
+    // Setter for the first name
+    set firstName(newFirstName) {
+      this._firstName = newFirstName;
+    }
+  
+    // Setter for the last name
+    set lastName(newLastName) {
+      this._lastName = newLastName;
+    }
+  }
+  
+  // Create a new person
+  const person = new Person("rohini", "guduru");
+  
+  // Get the full name using the getter
+  console.log(person.fullName); // Output: rohini guduru
+  
+  // Update the first name using the setter
+  person.firstName = "rony";
+  
+  // Get the updated full name
+  console.log(person.fullName); // Output: rohini guduru
