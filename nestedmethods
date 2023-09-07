@@ -1,0 +1,18 @@
+// Define an object called 'person'
+var person = {
+  firstName: "rony",
+  lastName: "Devan",
+  fullName: function() {
+    // This is a nested function (method)
+    return this.firstName + " " + this.lastName;
+  },
+  greet: function() {
+    // Another nested function (method)
+    console.log("Hello, " + this.fullName() + "!");
+  }
+};
+
+// Accessing object properties and methods
+console.log(person.firstName); // Outputs: rony
+console.log(person.fullName()); // Outputs: rony Devan
+person.greet(); // Outputs: Hello, rony Devan!
