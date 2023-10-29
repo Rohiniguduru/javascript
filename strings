@@ -1,0 +1,10 @@
+let bool_to_s1 = Boolean(0);
+let bool_to_s2 = Boolean(1);
+let num_to_s = 1234;
+ 
+console.log( typeof(bool_to_s1));
+ console.log( typeof(String(bool_to_s1)));
+ console.log( typeof(bool_to_s2));
+ console.log(typeof(String(bool_to_s2)));
+ console.log( typeof(num_to_s));
+ console.log(typeof(String(num_to_s)));
