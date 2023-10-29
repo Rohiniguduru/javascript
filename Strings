@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Statements</h2>
+
+<p id="demo">You can write js program.</p>
+
+<script>
+document.getElementById("demo").innerHTML = \
+"Hello rohini.";
+</script>
+
+</body>
+</html>
