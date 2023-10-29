@@ -1,0 +1,7 @@
+function func() {   
+    let a = true; 
+      
+    let value = Number(a); 
+    console.log(value); 
+} 
+func();
